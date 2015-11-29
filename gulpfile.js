@@ -26,7 +26,6 @@ var paths = {
 gulp.task('sass', function() {
   return gulp.src(paths.styles.src + '/**/*.scss')
     .pipe(sourcemaps.init())
-    .pipe(concat('main.css'))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
